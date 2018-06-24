@@ -35,7 +35,9 @@ class Person
     end
     
     def work_out
-      self.hygiene = self.hygiene +
+      self.hygiene = self.hygiene - 3
+      self.happiness = self.happiness + 2
+      return 
     end
   end
 
