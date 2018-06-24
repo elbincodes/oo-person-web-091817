@@ -37,8 +37,13 @@ class Person
     def work_out
       self.hygiene = self.hygiene - 3
       self.happiness = self.happiness + 2
-      return 
+      return "♪ another one bites the dust ♫"
     end
+    
+    def call_friend(friend)
+      self.happiness = self.happiness + 3
+      friend.happiness = friend.happiness + 3
+      return "Hi #{friend.name}! It's #{self.name}. How are you?"
   end
 
 
